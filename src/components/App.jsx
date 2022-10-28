@@ -105,7 +105,6 @@ export class App extends Component {
               <img
                 src={this.state.selectedImage.largeImageURL}
                 alt={this.state.selectedImage.tags}
-                width="100%"
               />
             }
           </Modal>

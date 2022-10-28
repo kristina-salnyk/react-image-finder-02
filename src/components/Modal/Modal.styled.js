@@ -14,6 +14,5 @@ export const Overlay = styled.div`
 `;
 
 export const Modal = styled.div`
-  max-width: 80%;
-  max-height: 80%;
+  margin: 20%;
 `;
