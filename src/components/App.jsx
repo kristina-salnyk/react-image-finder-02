@@ -1,38 +1,32 @@
 import { Box } from './Box';
 import Searchbar from './Searchbar';
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import ImageGallery from './ImageGallery';
 import Button from './Button';
 import Loader from './Loader';
 import Modal from './Modal';
 import Message from './Message';
 import getMessage from 'utils/messages/getMessage';
-import useImageFetch from '../hooks/useImageFetch';
+import useImagesData from '../hooks/useImagesData';
 
 export const App = () => {
-  const [searchQuery, setSearchQuery] = useState('');
   const [currentImageId, setCurrentImageId] = useState(null);
   const [
+    searchQuery,
+    setSearchQuery,
     images,
-    page,
-    endOfResults,
     isLoading,
     error,
+    page,
+    hasMore,
     getImages,
-    onChangeSearchQuery,
-  ] = useImageFetch();
-
-  useEffect(() => {
-    getImages(searchQuery);
-  }, [searchQuery]);
+  ] = useImagesData();
 
   const changeSearchQuery = value => {
     if (value === searchQuery) {
       return;
     }
-
     setSearchQuery(value);
-    onChangeSearchQuery();
   };
 
   const openView = id => {
@@ -59,7 +53,7 @@ export const App = () => {
         <ImageGallery images={images} page={page} onClick={openView} />
       )}
 
-      {images.length > 0 && !endOfResults && (
+      {images.length > 0 && !hasMore && (
         <Button onClick={() => getImages(searchQuery)}>Load more</Button>
       )}
 
