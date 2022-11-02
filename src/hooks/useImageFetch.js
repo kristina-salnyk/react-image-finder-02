@@ -16,7 +16,7 @@ const useImageFetch = () => {
     setIsLoading(true);
 
     try {
-      const data = await fetchImages(searchQuery);
+      const data = await fetchImages(searchQuery, page);
 
       setImages(prevState => {
         const state = [...prevState, ...data.hits];

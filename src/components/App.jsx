@@ -24,7 +24,7 @@ export const App = () => {
 
   useEffect(() => {
     getImages(searchQuery);
-  }, [searchQuery, getImages]);
+  }, [searchQuery]);
 
   const changeSearchQuery = value => {
     if (value === searchQuery) {
@@ -60,7 +60,7 @@ export const App = () => {
       )}
 
       {images.length > 0 && !endOfResults && (
-        <Button onClick={() => getImages(searchQuery, page)}>Load more</Button>
+        <Button onClick={() => getImages(searchQuery)}>Load more</Button>
       )}
 
       {isLoading && <Loader />}
