@@ -54,7 +54,7 @@ export const App = () => {
       )}
 
       {images.length > 0 && !hasMore && (
-        <Button onClick={() => getImages(searchQuery)}>Load more</Button>
+        <Button onClick={() => getImages()}>Load more</Button>
       )}
 
       {isLoading && <Loader />}
