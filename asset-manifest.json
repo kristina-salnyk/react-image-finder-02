@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/goit-react-hw-04-images/static/css/main.ddd1da1b.css",
-    "main.js": "/goit-react-hw-04-images/static/js/main.c532d6a3.js",
-    "static/media/no-results.png": "/goit-react-hw-04-images/static/media/no-results.d438399ff68428d0774c.png",
-    "static/media/empty-query.png": "/goit-react-hw-04-images/static/media/empty-query.cf923ecdacb47d96d5ff.png",
-    "static/media/error.png": "/goit-react-hw-04-images/static/media/error.5496863544fb5a519bcf.png",
-    "index.html": "/goit-react-hw-04-images/index.html",
-    "main.ddd1da1b.css.map": "/goit-react-hw-04-images/static/css/main.ddd1da1b.css.map",
-    "main.c532d6a3.js.map": "/goit-react-hw-04-images/static/js/main.c532d6a3.js.map"
+    "main.css": "/react-image-finder-02/static/css/main.ddd1da1b.css",
+    "main.js": "/react-image-finder-02/static/js/main.f50e5929.js",
+    "static/media/no-results.png": "/react-image-finder-02/static/media/no-results.d438399ff68428d0774c.png",
+    "static/media/empty-query.png": "/react-image-finder-02/static/media/empty-query.cf923ecdacb47d96d5ff.png",
+    "static/media/error.png": "/react-image-finder-02/static/media/error.5496863544fb5a519bcf.png",
+    "index.html": "/react-image-finder-02/index.html",
+    "main.ddd1da1b.css.map": "/react-image-finder-02/static/css/main.ddd1da1b.css.map",
+    "main.f50e5929.js.map": "/react-image-finder-02/static/js/main.f50e5929.js.map"
   },
   "entrypoints": [
     "static/css/main.ddd1da1b.css",
-    "static/js/main.c532d6a3.js"
+    "static/js/main.f50e5929.js"
   ]
 }
